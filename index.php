@@ -1,3 +1,15 @@
+<?php
+
+
+// Проверяем согласие на куки
+if ($_REQUEST['allow_cookies']==1)
+    {
+    setcookie("allow", 1, /*time()+60*60*24*/ strtotime('+1 days') ); // 1 сутки
+    }
+
+
+
+?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -8,10 +20,7 @@
   </head>
   <body>
 <h1>Тестовое задание</h1>
-
-<?php
-
-
+<?
 
 // Task 1
 // Перебор массива и определение страны телефона
@@ -54,12 +63,15 @@ echo "<br>";
 </form>    
 <?
 
+// Проверяем введённый номер телефона
 if (isset($_REQUEST['submit']))
     {
         $country=getCountry($_REQUEST['number']);
         echo "Введённый Вами номер ".$_REQUEST['number'];
         echo " относится к стране ".$country;
     }
+
+
 
 
 
@@ -92,10 +104,18 @@ if (isset($_REQUEST['submit']))
   integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
   crossorigin="anonymous">
 </script>
-<script type="text/javascript">
-    $(window).on('load', function() {
-        $('#myModal').modal('show');
-    });
-</script>
+<? 
+
+if ($_COOKIE['allow']!=1 )
+    {
+        echo "
+            <script type=\"text/javascript\">
+            $(window).on('load', function() {
+            $('#myModal').modal('show');
+                });
+        </script>";
+    }
+?>
+
 </body>
 </html>
