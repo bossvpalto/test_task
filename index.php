@@ -36,7 +36,19 @@ echo "7 777 123-45-67   ";
 echo getCountry("7 777 123-45-67");
 echo "<br>";
 
+?>
+<form name="form" method="post" action="#">
+    <input type="text" name="number" placeholder="Введите сюда номер телефона для проверки" value="<? echo $_REQUEST['number']; ?>" />
+    <input type="submit" name="submit"  />
+</form>    
+<?
 
+if (isset($_REQUEST['submit']))
+    {
+        $country=getCountry($_REQUEST['number']);
+        echo "Введённый Вами номер ".$_REQUEST['number'];
+        echo " относится к стране ".$country;
+    }
 
 
 
