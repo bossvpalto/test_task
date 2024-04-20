@@ -19,6 +19,13 @@ if ($_REQUEST['allow_cookies']==1)
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   </head>
   <body>
+<style>
+body
+    {
+        background-image:url('bg.png');
+    }
+
+</style>
 <h1>Тестовое задание</h1>
 <?
 
@@ -70,12 +77,45 @@ if (isset($_REQUEST['submit']))
         echo "Введённый Вами номер ".$_REQUEST['number'];
         echo " относится к стране ".$country;
     }
-
-
-
-
-
 ?>  
+
+
+
+
+<h1>Korzyści ze współpracy z nami</h1>
+
+
+<div class="card" style="width: 18rem;">
+  <img src="1.png" class="card-img-top" style="width:60px;" alt="...">
+  <div class="card-body">
+    <p class="card-text">Przechowywanie towarów ponadgabarytowych</p>
+    <a href="#" >Opis</a>
+  </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <img src="2.png" class="card-img-top" style="width:60px;" alt="...">
+  <div class="card-body">
+    <p class="card-text">Przechowywanie towarów ponadgabarytowych</p>
+    <a href="#" >Opis</a>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 <div class="modal " tabindex="-1" id="myModal">
