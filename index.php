@@ -20,13 +20,40 @@ if ($_REQUEST['allow_cookies']==1)
   </head>
   <body>
 <style>
-body
+.task3
     {
-        background-image:url('bg.png');
+        background-image:url('pic/bg.png');
+        background-repeat: repeat;
+        border-width:0px;
+        border-style:none;
+        display:inline-block;
+        margin:100px;
     }
-
+.my_card
+{
+        background-image:url('pic/black10p.png');
+        packground-color:none;
+        position:relative;
+        width:285px;
+        height:289px;
+        border-radius:10px;
+        display: flex;
+        flex-direction: column;
+        padding:40px;
+        margin:10px;
+        float:left;
+}
+.card-body
+{
+    padding-top:30px;
+}
+.card-text
+{
+    font-weight:bolder;
+}
 </style>
 <h1>Тестовое задание</h1>
+<h2>Задача 1: проверка телефонных номеров</h2>
 <?
 
 // Task 1
@@ -80,30 +107,77 @@ if (isset($_REQUEST['submit']))
 ?>  
 
 
+<div class="task3 container">
 
-
+<h2>Задача 3: Вёрстка по образцу</h2>
 <h1>Korzyści ze współpracy z nami</h1>
 
 
-<div class="card" style="width: 18rem;">
-  <img src="1.png" class="card-img-top" style="width:60px;" alt="...">
+<div class="my_card" style="width: 18rem;">
+  <img src="pic/1.png" class="card-img-top" style="width:60px;" alt="...">
   <div class="card-body">
     <p class="card-text">Przechowywanie towarów ponadgabarytowych</p>
     <a href="#" >Opis</a>
   </div>
 </div>
 
-<div class="card" style="width: 18rem;">
-  <img src="2.png" class="card-img-top" style="width:60px;" alt="...">
+<div class="my_card" style="width: 18rem;">
+  <img src="pic/2.png" class="card-img-top" style="width:60px;" alt="...">
   <div class="card-body">
-    <p class="card-text">Przechowywanie towarów ponadgabarytowych</p>
+    <p class="card-text">Elastyczne warunki współpracy</p>
     <a href="#" >Opis</a>
   </div>
 </div>
 
+<div class="my_card" style="width: 18rem;">
+  <img src="pic/3.png" class="card-img-top" style="width:60px;" alt="...">
+  <div class="card-body">
+    <p class="card-text">Integracja i zarządzanie zamówieniami</p>
+    <a href="#" >Opis</a>
+  </div>
+</div>
 
+<div class="my_card" style="width: 18rem;">
+  <img src="pic/4.png" class="card-img-top" style="width:60px;" alt="...">
+  <div class="card-body">
+    <p class="card-text">Wysyłka zamówień w dniu kompletacji</p>
+    <a href="#" >Opis</a>
+  </div>
+</div>
 
+<div class="my_card" style="width: 18rem;">
+  <img src="pic/5.png" class="card-img-top" style="width:60px;" alt="...">
+  <div class="card-body">
+    <p class="card-text">Niskie koszty dostawy</p>
+    <a href="#" >Opis</a>
+  </div>
+</div>
 
+<div class="my_card" style="width: 18rem;">
+  <img src="pic/6.png" class="card-img-top" style="width:60px;" alt="...">
+  <div class="card-body">
+    <p class="card-text">Gwarancja bezpieczeństwa towarów</p>
+    <a href="#" >Opis</a>
+  </div>
+</div>
+
+<div class="my_card" style="width: 18rem;">
+  <img src="pic/7.png" class="card-img-top" style="width:60px;" alt="...">
+  <div class="card-body">
+    <p class="card-text">Całodobowy wideo monitoring</p>
+    <a href="#" >Opis</a>
+  </div>
+</div>
+
+<div class="my_card" style="width: 18rem;">
+  <img src="pic/8.png" class="card-img-top" style="width:60px;" alt="...">
+  <div class="card-body">
+    <p class="card-text">Wysyłka zamówień do różnych krajów</p>
+    <a href="#" >Opis</a>
+  </div>
+</div>
+
+</div>
 
 
 
@@ -122,7 +196,7 @@ if (isset($_REQUEST['submit']))
   <div class="modal-dialog" style="margin-right:0px;">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title">Предупреждение!</h5>
+        <h5 class="modal-title">Задача 2: Всплывающее окно</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
