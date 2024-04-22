@@ -28,6 +28,9 @@ if ($_REQUEST['allow_cookies']==1)
         border-style:none;
         display:inline-block;
         margin:100px;
+        @media (max-width:991px) {
+          width:350px;
+        }
     }
 .my_card
 {
@@ -53,6 +56,7 @@ if ($_REQUEST['allow_cookies']==1)
 }
 </style>
 <h1>Тестовое задание</h1>
+<div class="container">
 <h2>Задача 1: проверка телефонных номеров</h2>
 <?
 
@@ -105,7 +109,7 @@ if (isset($_REQUEST['submit']))
         echo " относится к стране ".$country;
     }
 ?>  
-
+</div>
 
 <div class="task3 container">
 
